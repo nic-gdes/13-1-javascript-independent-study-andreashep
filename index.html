@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Changing Information Tabs</h1>
+    <section class="section">
+        <!---------------title--------------->
+      
+      <div class="title">
+        <h2>Title of information</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          nostrum illum dolores eius repellat laborum itaque architecto!
+        </p>
+      </div>
+<!---------------------card------------>
+        <div class="card">
+            <!-----------------img----------------->
+            <div class="sub_img">
+          <img src="./image/9640.jpg" alt="small cute dog in a striped winter hat" />
+          </div>
+            <!-----------------info with tabs (btns)------------------>
+    <article class="info">  
+    <!-------------btn-container---------->    
+        <div class="btn-container">
+          <button class="tab-btn" data-id="history">History</button>
+          <button class="tab-btn" data-id="present">Present</button>
+          <button class="tab-btn" data-id="future">Future</button>
+        </div>
+        <div class="info-content">
+          <!-----------item1---------------->
+          <div class="content active" id="history">
+              <h4>History</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quibusdam tenetur ratione, soluta sunt ut ipsam quos quas nostrum, in unde non deserunt ea dolor maxime doloremque, cumque accusantium eum.</p>
+          </div>
+          <!-------------item2 ---------------->
+          <div class="content" id="present">
+              <h4>Present</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit accusamus placeat voluptatem, ipsam, perspiciatis asperiores aut vitae unde molestias atque facilis cupiditate voluptates illum, nam sapiente. Quaerat esse architecto nam?</p>
+          <ul>
+            <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+            </div>
+          <!-------------item3 ---------------->
+          <div class="content" id="future">
+            <h4>Future</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit accusamus placeat voluptatem, ipsam, perspiciatis asperiores aut vitae unde molestias atque facilis cupiditate voluptates illum, nam sapiente. Quaerat esse architecto nam?</p>
+        </div>
+        </div>
+    </article>
+    <!-----------------end of card---------------->
+  </section>
+
+    <section>
+      <h2>Original Project
+      </h2>
+        <img src="./image/tabs.png" alt="">
+    </section>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,88 @@
+:root {
+  font-size: 16px;
+  font-family: "Edu TAS Beginner", cursive;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.section {
+  padding: 5rem;
+  max-width: 800px;
+  background-color: aliceblue;
+  
+}
+
+/*--------TITLE/SUB-TITLE------*/
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title p {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+/*------------CARD---------------*/
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  background-color: aliceblue;
+}
+
+img {
+  width: 100%;
+    object-fit: cover;
+}
+/*----------------btn and btn-container----*/
+.btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tab-btn {
+  padding: 1rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  background-color: #fff;
+  border: 1px solid navy;
+  border-radius: 5px;
+}
+/*-------------btn:hover worked on Firefox but not on Chrome---------*/
+.tab-btn:hover {
+  color: aliceblue;
+  background-color: navy;
+}
+.tab-btn:active {
+  color: aliceblue;
+  background-color: navy;
+}
+
+/*-------------info: text content & btns---------*/
+.info {
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+/*------------hide content-------------*/
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
